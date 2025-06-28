@@ -1,0 +1,138 @@
+/* ========================== */
+/* Updated Footer Section */
+/* ========================== */
+.footer {
+  background: #303030; /* Black background */
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 150px;
+  padding-left: 50px;
+}
+
+.footer-center {
+  flex: 2;
+  min-width: 300px;
+  text-align: center;
+}
+
+.footer-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0 auto 10px;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  padding: 0;
+}
+
+.contact-item span {
+  padding-right: 5px;
+}
+
+.phone-item {
+  margin: 0 auto;
+  justify-content: right;
+  margin-right: 10px;
+}
+
+.phone-item a {
+  align-items: right;
+}
+
+.phoneDeco {
+  color: #fff;
+  text-decoration: none;
+}
+
+.location-item {
+  margin-left: 15px;
+}
+
+.email-item {
+  grid-column: span 2;
+  justify-content: center;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-copy p {
+  color: #817e7e;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 150px;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.footer-right a {
+  margin-left: 15px;
+  display: inline-block;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-left,
+  .footer-right {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .footer-contact {
+    grid-template-columns: 1fr;
+  }
+  .email-item {
+    justify-content: center;
+  }
+  .footer-right a {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-contact {
+    padding: 0;
+  }
+  .contact-item {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .location-item {
+    margin: 0 auto;
+  }
+  .email-item {
+    grid-column: span 1;
+  }
+  .phone-item {
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+  }
+  .location-item {
+    grid-column: span 1;
+  }
+}

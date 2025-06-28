@@ -1,0 +1,157 @@
+/* ========================== */
+/* Why Choose Section Styles */
+/* ========================== */
+
+.whyTitle {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  margin-top: 0;
+  color: #2d2d2d;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  position: relative;
+}
+
+.highlight {
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.highlighttxt {
+  margin-bottom: 5px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.underline {
+  display: block;
+  margin: -5px auto 0 auto;
+  width: 250px;
+  height: auto;
+  filter: brightness(0) saturate(100%) invert(47%) sepia(89%) saturate(1197%)
+    hue-rotate(10deg) brightness(100%) contrast(101%);
+}
+
+.whyChoose {
+  background: url('/img/pattern-bg.png') no-repeat center center/cover; /* Example pattern background */
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.whyChoose h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.highlight Image {
+  color: #ff9900;
+}
+
+/* Wrapper for the two columns and the vertical bar */
+.whyChooseWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 30px;
+  position: relative;
+}
+
+/* Lower the right column a bit */
+.whyChooseWrapper .whyChooseColumn:last-child {
+  margin-top: 20px; /* Adjust this value to lower the right side as needed */
+}
+
+/* Each Column */
+.whyChooseColumn {
+  width: 45%;
+  position: relative;
+}
+
+/* Vertical Separator */
+.verticalBar {
+  width: 2px;
+  background: #ccc;
+  height: 450px; /* fixed height */
+  align-self: center;
+}
+
+/* Item styles (unchanged) */
+.whyChooseItem {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.whyChooseItem img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.whyChooseItem h3 {
+  font-size: 1.2rem;
+  margin: 0 0 5px 0;
+}
+
+.whyChooseItem p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Horizontal Separator */
+.horizontalBar {
+  width: 80%;
+  height: 1px;
+  background: #ccc;
+  margin: 20px auto;
+}
+
+.horizontalBarResponsive {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .whyChooseWrapper {
+    flex-direction: column;
+  }
+  .whyChooseContent {
+    grid-template-columns: 1fr;
+  }
+  .verticalBar {
+    display: none;
+  }
+  .horizontalBarResponsive {
+    display: flex;
+    width: 80%;
+    height: 1px;
+    background: #ccc;
+    margin: 20px auto;
+  }
+  .whyChooseWrapper {
+    display: inline-block;
+    justify-content: center;
+  }
+  .whyChooseColumn {
+    display: contents;
+    justify-content: center;
+    width: 45%;
+    position: relative;
+  }
+  .whyChooseItem {
+    display: contents;
+    text-align: center;
+  }
+}

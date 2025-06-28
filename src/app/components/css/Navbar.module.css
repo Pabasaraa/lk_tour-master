@@ -1,0 +1,105 @@
+/* ========================== */
+/* Navigation Bar */
+/* ========================== */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #303030; /* Darker transparent background */
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLeft {
+  margin-left: 20px;
+  /* Additional styling for the logo if needed */
+}
+
+.navRight {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Desktop Menu Links */
+.desktopMenu .navLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.desktopMenu .navLink:hover {
+  color: #ffcc00;
+}
+
+.desktopMenu .navBtn {
+  background-color: #cc7503;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.desktopMenu .navBtn:hover {
+  background: orange;
+  color: #000;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Menu (hidden by default) */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.mobileMenu a {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+  font-size: 1rem;
+}
+
+.mobileMenu a:last-child {
+  border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .mobileMenu {
+    display: flex;
+  }
+}

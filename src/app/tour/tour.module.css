@@ -1,0 +1,237 @@
+/* ========================== */
+/* Tour Intro Section */
+/* ========================== */
+.tourIntro {
+  position: relative;
+  height: 65vh;
+  min-height: 380px;
+  background: linear-gradient(
+      110deg,
+      rgba(30, 30, 30, 0.62) 0%,
+      rgba(30, 30, 30, 0.32) 60%,
+      rgba(30, 30, 30, 0.12) 100%
+    ),
+    url('/img/tours-intro.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  text-align: left;
+  padding-left: 8vw;
+  box-shadow: 0 6px 32px 0 rgba(40, 60, 90, 0.08);
+  overflow: hidden;
+}
+
+.tourIntroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  padding: 36px 40px 36px 0;
+}
+
+.tourIntroContent h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0 0 14px 0;
+  letter-spacing: -1.2px;
+  line-height: 1.1;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+.tourIntroContent p {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 400;
+  color: #f3f3f3;
+  line-height: 1.6;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive hero section */
+@media (max-width: 900px) {
+  .tourIntro {
+    height: 48vh;
+    min-height: 260px;
+    padding-left: 4vw;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+  .tourIntroContent {
+    padding: 22px 18px 22px 0;
+    max-width: 98vw;
+  }
+  .tourIntroContent h1 {
+    font-size: 2.1rem;
+  }
+  .tourIntroContent p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tourIntro {
+    height: 38vh;
+    min-height: 160px;
+    padding-left: 2vw;
+    border-radius: 0 0 12px 12px;
+  }
+  .tourIntroContent {
+    padding: 12px 8px 12px 0;
+    max-width: 98vw;
+    background: rgba(24, 24, 24, 0.44);
+  }
+  .tourIntroContent h1 {
+    font-size: 1.3rem;
+  }
+  .tourIntroContent p {
+    font-size: 0.92rem;
+  }
+}
+
+/* ========================== */
+/* Tour Packages Section */
+/* ========================== */
+.epicEscapes {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.escapesHeader {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.escapesDecor {
+  width: 60px;
+  height: 4px;
+  background: orange;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+}
+
+/* .epicEscapes p {
+  font-size: 16px;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto 30px;
+} */
+
+.escapesGrid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.escapeCard {
+  text-align: left;
+  position: relative;
+  width: 320px;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 32px 0 rgba(40, 60, 90, 0.1),
+    0 1.5px 6px 0 rgba(40, 60, 90, 0.07);
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.escapeCard:hover {
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 12px 36px 0 rgba(40, 60, 90, 0.16),
+    0 2px 8px 0 rgba(40, 60, 90, 0.09);
+}
+
+.escapeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0.08) 60%,
+    rgba(20, 20, 20, 0.55) 100%
+  );
+  z-index: 1;
+}
+
+.escapeContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 32px 22px 24px 22px;
+  color: #fff;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 0.55) 80%,
+    rgba(20, 20, 20, 0) 100%
+  );
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  box-sizing: border-box;
+}
+
+.escapeContent h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.escapeContent p {
+  font-size: 0.98rem;
+  font-weight: 400;
+  margin-bottom: 18px;
+  color: #f3f3f3;
+  line-height: 1.5;
+}
+
+.escapeLabel {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #c48a3e;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  box-shadow: 0 1px 4px 0 rgba(196, 138, 62, 0.08);
+  letter-spacing: 0.2px;
+}
+
+/* Responsive Design for Escape Cards */
+@media (max-width: 900px) {
+  .escapesGrid {
+    gap: 20px;
+    max-width: 98vw;
+  }
+  .escapeCard {
+    width: 90vw;
+    max-width: 340px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .escapesGrid {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .escapeCard {
+    width: 98vw;
+    max-width: 98vw;
+    height: 320px;
+  }
+  .escapeContent {
+    padding: 22px 12px 16px 12px;
+  }
+}

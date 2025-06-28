@@ -1,0 +1,85 @@
+/* ========================== */
+/* Moments Captured Section */
+/* ========================== */
+.momentsCaptured {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.momentsHeader {
+  margin-bottom: 40px;
+}
+
+.momentsDecor {
+  width: 60px;
+  height: 4px;
+  background: orange;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+}
+
+.momentsCaptured h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Use CSS Grid with fixed aspect ratio for uniform image sizes */
+.momentsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.momentImg {
+  position: relative;
+  width: 100%;
+  padding-top: 66.66%; /* 3:2 aspect ratio */
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.momentImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* See More Moments Button */
+.btnSeeMore {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #c48a3e;
+  text-decoration: none;
+  border: 2px solid #c48a3e;
+  border-radius: 10px;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnSeeMore:hover {
+  background: #c48a3e;
+  color: white;
+}
+
+/* Responsive Design for Moments Grid */
+@media (max-width: 768px) {
+  .momentsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .momentsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,92 @@
+/* ========================== */
+/* Global Styles */
+/* ========================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ========================== */
+/* Hero Section */
+/* ========================== */
+.hero {
+  position: relative;
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+    url('/img/hero.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  text-align: left;
+  padding-left: 10%;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 5px 0 0 0;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 300;
+  color: #d1d3d6;
+}
+
+/* Responsive hero section */
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+    padding-left: 5%;
+  }
+
+  .hero-content {
+    top: 35%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .hero {
+    height: 45vh;
+    padding-left: 3%;
+  }
+
+  .hero-content {
+    top: 30%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}

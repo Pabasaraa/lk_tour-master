@@ -1,0 +1,48 @@
+/* ========================== */
+/* Fixed Background Section */
+/* ========================== */
+.fixedBgSection {
+  position: relative;
+  background: url('/img/fixed-bg.jpeg') no-repeat center center/cover;
+  background-attachment: fixed; /* This keeps the image fixed when scrolling */
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.fixedBgContent {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.fixedBgContent h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  max-width: 1000px;
+  color: #d1d3d6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fixedBgSection {
+    height: 40vh;
+  }
+
+  .fixedBgContent h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fixedBgSection {
+    height: 35vh;
+  }
+
+  .fixedBgContent h2 {
+    font-size: 1.5rem;
+  }
+}

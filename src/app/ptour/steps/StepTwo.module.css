@@ -1,0 +1,125 @@
+.stepContainer {
+  background: #fff;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .stepContainer {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #8c5a1f;
+  margin-bottom: 15px;
+}
+
+.stepsIndicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stepsIndicator span {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid transparent;
+}
+
+.completedStep {
+  background: #8c5a1f;
+  color: #fff;
+  border-color: #8c5a1f;
+}
+
+.activeStep {
+  background: #8c5a1f;
+  color: #fff;
+  border-color: #8c5a1f;
+}
+
+.inactiveStep {
+  background: #e0e0e0;
+  color: #444;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.inputGroup input,
+.inputGroup select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons stacked in a column */
+.nextButton {
+  background: #8c5a1f;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  font-size: 16px;
+}
+
+.prevButton {
+  background: #fff;
+  color: #8c5a1f;
+  padding: 14px;
+  border: 2px solid #8c5a1f;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+}

@@ -1,0 +1,35 @@
+.backToTop {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #c48a3e;
+  border: 1.5px solid #c48a3e;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 16px rgba(196, 138, 62, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.backToTop:hover {
+  background: #c48a3e;
+  color: #fff;
+  border-color: #c48a3e;
+  box-shadow: 0 6px 24px rgba(196, 138, 62, 0.16);
+}
+
+@media (max-width: 768px) {
+  .backToTop {
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+  }
+}

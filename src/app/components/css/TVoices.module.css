@@ -1,0 +1,131 @@
+/* ========================== */
+/* Trusted Voices Section - Minimalist Modern */
+/* ========================== */
+.trustedVoices {
+  padding: 40px 0 60px 0;
+  background: #00e083b2;
+  text-align: center;
+}
+
+.trustedVoices h2 {
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.01em;
+}
+
+.voicesGrid {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.voiceCard {
+  background: #fff;
+  width: 220px;
+  min-height: 260px;
+  padding: 28px 22px 22px 22px;
+  position: relative;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px 0 rgba(60, 72, 88, 0.07);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+  border: 1px solid #ececec;
+}
+
+.voiceCard:hover {
+  box-shadow: 0 4px 24px 0 rgba(60, 72, 88, 0.13);
+}
+
+.voiceCard .quoteIcon {
+  font-size: 38px;
+  color: #e0e0e0;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.voiceCard .subject {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.voiceCard .starRating {
+  margin: 0 0 10px 0;
+  color: #f1c40f;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.voiceCard .comment {
+  margin: 0 0 12px 0;
+  font-size: 0.97rem;
+  line-height: 1.5;
+  color: #444;
+  background: none;
+  border: none;
+  padding: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+}
+
+.voiceCard .readMore {
+  color: #00796b;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: 500;
+  margin-left: 4px;
+  padding: 0;
+  transition: color 0.15s;
+}
+
+.voiceCard .readMore:hover {
+  color: #004d40;
+  text-decoration: underline;
+}
+
+.voiceCard .reviewerName {
+  position: absolute;
+  font-weight: 500;
+  bottom: 22px;
+  left: 22px;
+  font-size: 0.98rem;
+  color: #888;
+  letter-spacing: 0.01em;
+}
+
+.voiceCard .tripadvisorIcon {
+  position: absolute;
+  right: 22px;
+  bottom: 18px;
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  .voicesGrid {
+    gap: 16px;
+    max-width: 100%;
+  }
+  .voiceCard {
+    width: 95vw;
+    min-width: 0;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}

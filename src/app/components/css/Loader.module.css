@@ -1,0 +1,43 @@
+
+/* ========================== */
+/* Loader Container */
+/* ========================== */
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: transparent;
+  }
+  
+  /* Loader Dots */
+  .loader {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .loader span {
+    width: 12px;
+    height: 12px;
+    background-color: #c48a3e;
+    border-radius: 50%;
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+  
+  /* Delay each dot */
+  .loader span:nth-child(1) { animation-delay: 0s; }
+  .loader span:nth-child(2) { animation-delay: 0.2s; }
+  .loader span:nth-child(3) { animation-delay: 0.4s; }
+  
+  /* Bounce Animation */
+  @keyframes bounce {
+    0%, 80%, 100% {
+      transform: scale(0);
+      opacity: 0.3;
+    }
+    40% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
